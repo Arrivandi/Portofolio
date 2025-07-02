@@ -1,0 +1,341 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 25%;
+  background: #002b5b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  margin: 0 5px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 20px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav li:hover {
+  color: #00bcd4;
+}
+
+.content {
+  width: 75%;
+  height: 100vh; /* tinggi penuh layar */
+  padding: 40px;
+  background: url('images/background.jpg') center/cover no-repeat;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+  position: relative;
+  color: white; /* jika ingin teks di atas background tetap terlihat */
+}
+
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+#dashboard {
+  height: 100%;
+  color: white;
+  position: relative;
+}
+
+#dashboard .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#dashboard h1 {
+  font-size: 40px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0077b5;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+/* Efek animasi saat muncul */
+.page.active {
+  display: block;
+  animation: fadeScale 0.5s ease;
+}
+
+@keyframes fadeScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.97);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+/* Tambahkan blur background untuk main saat berpindah */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 25%;
+  background: #002b5b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  margin: 0 5px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 20px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav li:hover {
+  color: #00bcd4;
+}
+
+.content {
+  width: 75%;
+  height: 100vh; /* tinggi penuh layar */
+  padding: 40px;
+  background: url('images/background2.jpg') center/cover no-repeat;
+  overflow-y: auto;
+  transition: filter 0.3s ease;
+  position: relative;
+  color: white; /* jika ingin teks di atas background tetap terlihat */
+}
+
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+#dashboard {
+  height: 100%;
+  color: white;
+  position: relative;
+}
+
+#dashboard .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#dashboard h1 {
+  font-size: 40px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0077b5;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+/* Efek animasi saat muncul */
+.page.active {
+  display: block;
+  animation: fadeScale 0.5s ease;
+}
+
+@keyframes fadeScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.97);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+/* Tambahkan blur background untuk main saat berpindah */
+.content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: none;
+  transition: backdrop-filter 0.3s ease;
+  z-index: 0;
+}
+
+.content.blurred::before {
+  backdrop-filter: blur(6px);
+}
+
+/* Pastikan isi tetap terlihat di atas lapisan blur */
+.content > * {
+  position: relative;
+  z-index: 1;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  filter: grayscale(0%);
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+  filter: grayscale(30%);
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  filter: grayscale(0%);
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+  filter: grayscale(30%);
+}

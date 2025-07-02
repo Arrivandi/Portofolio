@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Arrivandi Aditya</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<div class="container">
+  <aside class="sidebar">
+    <img src="images/profile.jpg" alt="Foto Profil" class="profile-img"/>
+    <div class="social-icons">
+  <a href="https://instagram.com/_arrajaa" target="_blank">
+    <img src="images/instagram.svg" alt="Instagram" />
+  </a>
+  <a href="https://wa.me/6287860533716" target="_blank">
+    <img src="images/whatsapp.svg" alt="WhatsApp" />
+  </a>
+  <a href="https://github.com/Arrivandi" target="_blank">
+    <img src="images/github.svg" alt="GitHub" />
+  </a>
+  <a href="https://linkedin.com/in/arrivandi-aditya-706453363" target="_blank">
+    <img src="images/linkedin.svg" alt="LinkedIn" />
+  </a>
+</div>
+
+    <nav>
+      <ul>
+        <li onclick="showPage('dashboard')">Dashboard</li>
+        <li onclick="showPage('about')">Tentang Saya</li>
+        <li onclick="showPage('cv')">Lihat CV</li>
+        <li onclick="showPage('contact')">Kontak</li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <section id="dashboard" class="page active">
+      <span class="label">Dashboard</span>
+      <div class="center">
+        <h1>PORTOFOLIO<br>ARRIVANDI ADITYA</h1>
+      </div>
+    </section>
+
+    <section id="about" class="page">
+      <h2>Tentang Saya</h2>
+      <p>Saya adalah mahasiswa D3 Teknik Telekomunikasi di Politeknik Negeri Bandung yang tertarik pada IoT dan jaringan komunikasi.</p>
+      <h3>Pendidikan</h3>
+      <p>Politeknik Negeri Bandung (2023 – sekarang), IPK: 3.03/4.00</p>
+      <h3>Kemampuan</h3>
+      <ul>
+        <li>Arduino, Proteus, Visual Studio</li>
+        <li>Python, C</li>
+        <li>Packet Tracer</li>
+      </ul>
+    </section>
+
+    <section id="cv" class="page">
+      <h2>Curriculum Vitae</h2>
+      <p><a href="cv.pdf" class="btn" target="_blank">📄 Lihat / Unduh CV</a></p>
+    </section>
+
+    <section id="contact" class="page">
+      <h2>Kontak</h2>
+      <ul>
+        <li>Email: arrivandi838@gmail.com</li>
+        <li>No WA: +62 878 6053 3716</li>
+        <li>Instagram: @_arrajaa</li>
+        <li>GitHub: github.com/Arrivandi</li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <p>&copy; 2025 Arrivandi Aditya. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
